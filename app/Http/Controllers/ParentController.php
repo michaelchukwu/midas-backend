@@ -51,7 +51,7 @@ class ParentController extends Controller
         }
 
         $trans = $parent->transactions()->create([
-            'reference' => TransRef::getHashedToken(),
+            'reference' => TransactionController::getHashedToken(),
             'type' => "credit",
             'status' => "pending",
             'amount' => 25000*count($request->children),
