@@ -54,7 +54,7 @@ class ParentController extends Controller
             'reference' => TransactionController::getHashedToken(),
             'type' => "credit",
             'status' => "pending",
-            'amount' => 25000*count($request->children),
+            'amount' => 40000*count($request->children),
             'note' => "".$note."",
         ]);
         // send an email 
